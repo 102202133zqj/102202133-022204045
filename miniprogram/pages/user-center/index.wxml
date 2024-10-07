@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="main">
+    <view class="title">个人信息</view>
+    <form bindsubmit="formSubmit">
+      <view class="form-item">
+        <label>姓名</label>
+        <input name="name" value="{{userInfo.name}}" />
+      </view>
+      <view class="form-item">
+        <label>学号</label>
+        <input name="studentId" value="{{userInfo.studentId}}" />
+      </view>
+      <view class="form-item">
+        <label>专业</label>
+        <input name="major" value="{{userInfo.major}}" />
+      </view>
+      <view class="form-item">
+        <label>联系方式</label>
+        <input name="contact" value="{{userInfo.contact}}" />
+      </view>
+      <view class="form-item">
+        <label>个人简历</label>
+        <textarea name="resume" value="{{userInfo.resume}}" />
+      </view>
+      <button formType="submit">保存修改</button>
+    </form>
+  </view>
+</view>
