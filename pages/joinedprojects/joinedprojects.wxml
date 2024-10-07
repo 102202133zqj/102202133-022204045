@@ -1,0 +1,31 @@
+<!-- joinedprojects.wxml -->
+<view class="container">
+    <view class="project-info">
+        <!-- 项目标题 -->
+        <view class="project-title">{{projectTitle}}</view>
+        <!-- 项目公告板块 -->
+        <view class="project-detail">
+            <view class="section-title">项目公告</view>
+            <view class="section-content">这里填写项目公告内容</view>
+        </view>
+        <!-- 参与成员板块 -->
+        <view class="project-detail">
+            <view class="section-title">参与成员</view>
+            <view class="section-content">
+                <block wx:for="{{projectMembers}}" wx:key="index">
+                    {{item}}
+                </block>
+            </view>
+        </view>
+        <!-- 今日任务板块 -->
+        <view class="project-detail">
+            <view class="section-title">今日任务</view>
+            <view class="section-content">
+                <!-- 今日任务的三个输入框 -->
+                <input type="text" placeholder="任务1" />
+                <input type="text" placeholder="任务2" />
+                <input type="text" placeholder="任务3" />
+            </view>
+        </view>
+    </view>
+</view>

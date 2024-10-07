@@ -52,3 +52,21 @@
   font-size: 16px;
   color: #666;
 }
+
+.publish-button-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100px; /* 根据需要调整高度 */
+    margin-top: 70px; /* 增加顶部外边距 */
+}
+
+.publish-button {
+    width: 200px; /* 按钮宽度 */
+    padding: 15px 0; /* 按钮内边距 */
+    background-color: #1aad19; /* 按钮背景颜色 */
+    color: white; /* 文字颜色 */
+    border: none; /* 无边框 */
+    border-radius: 4px; /* 圆角边框 */
+    font-size: 16px; /* 文字大小 */
+}

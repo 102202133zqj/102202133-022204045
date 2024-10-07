@@ -31,4 +31,11 @@ Page({
       recommendedProjects: filteredProjects,
     });
   },
+
+  navigateToNewProject() {
+    // 使用wx.navigateTo跳转到新页面
+    wx.navigateTo({
+      url: '/pages/newprojects/newprojects' 
+    });
+  }
 });

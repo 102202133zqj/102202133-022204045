@@ -4,10 +4,7 @@
     <view class="section">
       <view class="section-title">我参加的项目</view>
       <block wx:for="{{joinedProjects}}" wx:key="id">
-        <view class="project-item">
-          <view class="project-title">{{item.title}}</view>
-          <view class="project-description">{{item.description}}</view>
-        </view>
+        <button class="project-button" data-project-id="{{item.id}}" bindtap="goToProjectDetail"> {{item.title}} </button>
       </block>
     </view>
     <view class="section">
@@ -20,4 +17,5 @@
       </block>
     </view>
   </view>
+  
 </view>

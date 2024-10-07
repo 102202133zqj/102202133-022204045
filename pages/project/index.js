@@ -5,12 +5,12 @@ Page({
     joinedProjects: [
       {
         id: 1,
-        title: '项目A',
+        title: '智能化集成化的机器学习云平台',
         description: '这是一个用户参加的项目。',
       },
       {
         id: 2,
-        title: '项目B',
+        title: '智慧家庭人机交互平台关键技术及应用',
         description: '这是另一个用户参加的项目。',
       },
     ],
@@ -27,7 +27,7 @@ Page({
       },
     ],
   },
-
+  
   onClickProjectInfo(e) {
     const index = e.currentTarget.dataset.index;
     const projectList = this.data.projectList;
@@ -37,4 +37,13 @@ Page({
       projectList,
     });
   },
+
+  goToProjectDetail: function(e) {
+    // 获取被点击的项目ID
+    const projectId = e.currentTarget.dataset.projectId;
+    // 跳转到新页面，并传递项目ID作为参数
+    wx.navigateTo({
+      url: '/pages/joinedprojects/joinedprojects?projectId=' + projectId
+    });
+  }
 });
