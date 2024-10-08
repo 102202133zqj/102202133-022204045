@@ -4,11 +4,12 @@
     "pages/user-center/index",
     "pages/project/index" ,
     "pages/newprojects/newprojects" ,
+
     "pages/inproject/inproject",
     "pages/announcement/announcement",
     "pages/review/review",
-    "pages/projectDetail/projectDetail"
-
+    "pages/projectDetail/projectDetail",
+    "pages/joinedprojects/joinedprojects"
 
   ],
   "window": {
