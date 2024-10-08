@@ -1,0 +1,48 @@
+/* inproject.wxss */
+.container {
+    position: relative;
+    padding: 30px;
+}
+
+.project-info {
+    font-size: 18px; /* 调整项目信息的字体大小 */
+}
+
+.project-detail {
+    margin-bottom: 20px; /* 调整项目详情的间距 */
+}
+
+.section-title {
+    font-size: 20px; /* 调整板块标题的字体大小 */
+    font-weight: bold;
+}
+
+.section-content {
+    font-size: 16px; /* 调整板块内容的字体大小 */
+}
+
+.background-white {
+    background-color: white; /* 设置白色背景 */
+    padding: 20px; /* 添加内边距 */
+    border-radius: 10px; /* 添加圆角 */
+}
+
+.review-button {
+    display: block;
+    width: 100%;
+    background-color: #007aff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px; /* 与上方内容保持间距 */
+}
+
+.admin-button {
+    background-color: #007aff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

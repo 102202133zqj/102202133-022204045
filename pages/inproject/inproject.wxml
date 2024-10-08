@@ -1,0 +1,37 @@
+<view class="background-white">
+    <view class="project-info">
+        <!-- 项目公告板块 -->
+        <view class="project-detail">
+            <view class="section-title">项目公告</view>
+            <view class="section-content">
+                <view>{{announcement.title}}</view>
+                <view>{{announcement.content}}</view>
+                <block wx:if="{{isAdmin}}">
+                    <button class="admin-button" bindtap="goToPublishAnnouncement">修改公告</button>
+                </block>
+            </view>
+        </view>
+        <!-- 参与成员板块 -->
+        <view class="project-detail">
+            <view class="section-title">参与成员</view>
+            <view class="section-content">
+                <block wx:for="{{projectMembers}}" wx:key="index">
+                    <view>{{item}}</view>
+                </block>
+            </view>
+        </view>
+        
+        <!-- 今日任务板块 -->
+        <view class="project-detail">
+            <view class="section-title">今日任务</view>
+            <view class="section-content">
+                <!-- 今日任务的三个输入框 -->
+                <input type="text" placeholder="任务1" disabled="{{!isAdmin}}" />
+                <input type="text" placeholder="任务2" disabled="{{!isAdmin}}" />
+                <input type="text" placeholder="任务3" disabled="{{!isAdmin}}" />
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 审核按钮 -->
+<button class="review-button" bindtap="goToReview" wx:if="{{isAdmin}}">审核</button>

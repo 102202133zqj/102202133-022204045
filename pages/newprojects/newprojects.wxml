@@ -1,0 +1,20 @@
+<!-- newprojects.wxml -->
+<view class="container">
+  <view class="input-group">
+    <text>项目名称：</text>
+    <input type="text" placeholder="请输入项目名称" bindinput="updateInputValue" data-field="projectName" />
+  </view>
+  <view class="input-group">
+    <text>项目描述：</text>
+    <input type="text" placeholder="请输入项目描述" bindinput="updateInputValue" data-field="projectDescription" />
+  </view>
+  <view class="input-group">
+    <text>项目技能需求：</text>
+    <input type="text" placeholder="请输入技能需求" bindinput="updateInputValue" data-field="projectSkillRequirements" />
+  </view>
+  <view class="input-group">
+    <text>联系方式：</text>
+    <input type="text" placeholder="请输入联系方式" bindinput="updateInputValue" data-field="contactInfo" />
+  </view>
+  <button bindtap="publishProject">发布</button>
+</view>
