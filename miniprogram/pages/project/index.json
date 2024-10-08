@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "项目",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

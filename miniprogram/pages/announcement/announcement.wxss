@@ -1,0 +1,36 @@
+/* announcement.wxss */
+.container {
+    padding: 20px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-textarea {
+    height: 100px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #007aff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}

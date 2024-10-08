@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="search-bar">
+    <input class="search-input" placeholder="搜索项目" bindinput="onSearchInput" />
+    <button class="search-button" bindtap="onSearch">搜索</button>
+  </view>
+  <view class="publish-button-container">
+    <button class="publish-button" bindtap="navigateToNewProject">发布项目</button>
+  </view>
+  <view class="main">
+    <view class="title">推荐项目</view>
+    <block wx:for="{{recommendedProjects}}" wx:key="id">
+      <view class="project-item">
+        <view class="project-title">{{item.title}}</view>
+        <view class="project-description">{{item.description}}</view>
+        <button class="detail-button" data-project-id="{{item.id}}" bindtap="navigateToProjectDetail">查看详情</button>
+      </view>
+    </block>
+  </view>
+</view>

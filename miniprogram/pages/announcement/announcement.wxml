@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="form">
+        <view class="form-item">
+            <text class="form-label">公告标题</text>
+            <input class="form-input" type="text" placeholder="请输入公告标题" bindinput="onTitleInput"/>
+        </view>
+        <view class="form-item">
+            <text class="form-label">公告内容</text>
+            <textarea class="form-textarea" placeholder="请输入公告内容" bindinput="onContentInput"></textarea>
+        </view>
+        <button class="submit-button" bindtap="submitAnnouncement">发布公告</button>
+    </view>
+</view>
