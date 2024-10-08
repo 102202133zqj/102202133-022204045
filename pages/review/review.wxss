@@ -1,0 +1,38 @@
+/* review.wxss */
+.container {
+    padding: 20px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.member-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.approve-button, .reject-button {
+    background-color: #007aff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.reject-button {
+    background-color: #ff3b30;
+}

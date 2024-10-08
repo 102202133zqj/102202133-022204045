@@ -35,7 +35,18 @@ Page({
   navigateToNewProject() {
     // 使用wx.navigateTo跳转到新页面
     wx.navigateTo({
+
+      url: '/pages/newprojects/newprojects'
+    });
+  },
+
+  navigateToProjectDetail(e) {
+    const projectId = e.currentTarget.dataset.projectId;
+    wx.navigateTo({
+      url: `/pages/projectDetail/projectDetail?projectId=${projectId}`,
+
       url: '/pages/newprojects/newprojects' 
+
     });
   }
 });

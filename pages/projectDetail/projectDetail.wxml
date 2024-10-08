@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="project-detail">
+    <view class="project-title">{{project.title}}</view>
+    <view class="project-description">{{project.description}}</view>
+  </view>
+  <button class="apply-button" bindtap="applyForProject">申请</button>
+</view>

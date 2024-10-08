@@ -12,6 +12,7 @@
       <view class="project-item">
         <view class="project-title">{{item.title}}</view>
         <view class="project-description">{{item.description}}</view>
+        <button class="detail-button" data-project-id="{{item.id}}" bindtap="navigateToProjectDetail">查看详情</button>
       </view>
     </block>
   </view>

@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="form">
+        <view class="form-item">
+            <text class="form-label">待审核成员</text>
+            <view class="form-text">
+                <block wx:for="{{pendingMembers}}" wx:key="index">
+                    <view class="member-item">
+                        <text>{{item}}</text>
+                        <button class="approve-button" data-index="{{index}}" bindtap="approveMember">批准</button>
+                        <button class="reject-button" data-index="{{index}}" bindtap="rejectMember">拒绝</button>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

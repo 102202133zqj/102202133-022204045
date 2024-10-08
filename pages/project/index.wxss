@@ -1,12 +1,11 @@
+/* index.wxss */
 .container {
   padding: 20px;
 }
 
 .main {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .title {
@@ -26,8 +25,10 @@
 }
 
 .project-item {
+  margin-bottom: 20px;
   padding: 10px;
-  border-bottom: 1px solid #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .project-title {
@@ -36,6 +37,17 @@
 }
 
 .project-description {
-  font-size: 16px;
-  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-button, .admin-button {
+  margin-top: 10px;
+  background-color: #007aff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  text-align: center;
 }

@@ -36,7 +36,7 @@ input, textarea {
 button {
   width: 100%;
   padding: 15px; /* 增加 padding */
-  background-color: #07C160;
+  background-color: #007aff;
   color: #fff;
   border: none;
   border-radius: 4px;
