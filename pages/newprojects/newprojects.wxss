@@ -23,7 +23,7 @@ button {
   width: 100%;
   padding: 10px;
 
-  background-color: #07C160;
+  background-color: #007aff;
 
   color: white;
   border: none;
