@@ -2,6 +2,19 @@
   <view class="project-detail">
     <view class="project-title">{{project.title}}</view>
     <view class="project-description">{{project.description}}</view>
+    <!-- 新增板块 -->
+    <view class="project-section">
+      <text class="section-title">项目描述</text>
+      <text class="section-content">这个项目的目的是...</text>
+    </view>
+    <view class="project-section">
+      <text class="section-title">项目技能需求</text>
+      <text class="section-content">这个项目需要...</text>
+    </view>
+    <view class="project-section">
+      <text class="section-title">联系方式</text>
+      <text class="section-content">负责人微信号：D31232113</text>
+    </view>
   </view>
   <button class="apply-button" bindtap="applyForProject">申请</button>
 </view>

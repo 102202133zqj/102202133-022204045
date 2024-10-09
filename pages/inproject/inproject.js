@@ -15,7 +15,7 @@ Page({
             case '1':
                 this.setData({
                     projectTitle: '智能化集成化的机器学习云平台',
-                    projectMembers: ['李四', '王五', '赵六'],
+                    projectMembers: ['李四(微信号:D1111111)', '王五 (微信号:D22222222)', '赵六(微信号:D33333333)'],
                     reviewLink: '/pages/review/review?projectId=1', // 审核页面链接
                     isAdmin: false
                 });
@@ -23,7 +23,7 @@ Page({
             case '2':
                 this.setData({
                     projectTitle: '智慧家庭人机交互平台关键技术及应用',
-                    projectMembers: ['成员A', '成员B', '成员C'],
+                    projectMembers: ['成员A(微信号:D44444444)', '成员B(微信号:D55555555)', '成员C(微信号:D66666666)'],
                     reviewLink: '/pages/review/review?projectId=2', // 审核页面链接
                     isAdmin: false
                 });
@@ -31,7 +31,7 @@ Page({
             case '3':
                 this.setData({
                     projectTitle: '项目C',
-                    projectMembers: ['成员X', '成员Y', '成员Z'],
+                    projectMembers: ['成员X(微信号:D77777777)', '成员Y(微信号:D88888888)', '成员Z(微信号:D99999999)'],
                     reviewLink: '/pages/review/review?projectId=3', // 审核页面链接
                     isAdmin: true // 示例：项目3的用户为管理员
                 });

@@ -14,13 +14,11 @@ Page({
       },
     ],
   },
-
   onSearchInput(e) {
     this.setData({
       searchQuery: e.detail.value,
     });
   },
-
   onSearch() {
     const query = this.data.searchQuery.toLowerCase();
     const filteredProjects = this.data.recommendedProjects.filter(project =>
@@ -35,7 +33,6 @@ Page({
   navigateToNewProject() {
     // 使用wx.navigateTo跳转到新页面
     wx.navigateTo({
-
       url: '/pages/newprojects/newprojects'
     });
   },
@@ -43,10 +40,7 @@ Page({
   navigateToProjectDetail(e) {
     const projectId = e.currentTarget.dataset.projectId;
     wx.navigateTo({
-      url: `/pages/projectDetail/projectDetail?projectId=${projectId}`,
-
-      url: '/pages/newprojects/newprojects' 
-
+      url: `/pages/projectDetail/projectDetail?projectId=${projectId}`
     });
   }
 });
